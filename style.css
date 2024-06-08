@@ -2,21 +2,23 @@
   /* border: 1px red solid; */
   box-sizing: border-box;
   margin: 0px;
-  box-sizing: content-box;
 }
 
 main {
   background-color: #021530;
 }
+
+a:link,
 a:visited {
   color: white;
   text-decoration: none;
+  cursor: default;
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
+a:hover {
+  text-decoration: underline;
 }
+
 header {
   background-color: #021530;
 }
@@ -32,12 +34,17 @@ header {
 .navmenu li {
   padding: 20px;
 }
+
 .hero {
   text-align: center;
   background-color: #002252;
   padding: 200px;
   margin: 0px 0px;
   color: white;
+}
+
+.hero a {
+  color: goldenrod;
 }
 iframe {
   width: 400px;
@@ -62,6 +69,40 @@ iframe {
   background-color: #1a5696;
   color: white;
 }
-button #footer {
+#footer {
   background-color: #002252;
+  padding: 20px;
+  display: flex;
+  justify-items: center;
+}
+
+#footer button {
+  background-color: ;
+  font-size: 20px;
+  margin-left: 300px;
+  padding: 10px;
+  background-color: #002252;
+  border: none;
+  & a:hover {
+    background-color: #1a5696;
+  }
+}
+
+table {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+th,
+tr,
+td {
+  border: white 1px solid;
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
 }
